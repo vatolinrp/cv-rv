@@ -3,8 +3,9 @@ body {
   font-family: -apple-system;
 }
 .section {
-  height: 100vh;
+  height: 800px;
   background: grey;
+  overflow: hidden;
 }
 .section-title {
   padding-top:25px;
@@ -34,19 +35,91 @@ body {
 }
 .main {
   margin-left: 160px;
+  overflow: hidden;
 }
 .section-content {
-  display:flex;
+  display: block;
+  overflow: hidden;
 }
 #name {
   width: 600px;
   padding-top: 100px;
   text-align: center;
   font-size: 20px;
+  float: left;
 }
 #image {
-height: 80vh;
+  height: 650px;
+  border-radius: 10px;
+}
+#main-photo {
+  float: left;
+}
+#about-page-image {
+  height: 650px;
+  border-radius: 10px;
 }
 #yoe {
-display: inline;
+  display: inline;
+}
+.info-component {
+  display: inline;
+  width: 250px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.info-component-key {
+  float:left;
+  margin-right: 10px;
+}
+.info-component-value {
+  float: left;
+}
+#about-page-image-div {
+  float: left;
+  margin: 10px;
+}
+.about-info {
+  float:left;
+  width: 600px;
+}
+#about-me-question {
+  margin-top: 10px;
+  font-size: 25px;
+}
+#job-title {
+  font-size: 20px;
+  margin-top: 30px;
+}
+#about-me-description {
+  margin-top: 20px;
+  float: left;
+}
+#key-details {
+  margin-top: 30px;
+  overflow: hidden;
+  float: left;
+}
+#about-actions {
+  margin-top: 30px;
+  overflow: hidden;
+  float: left;
+}
+.button {
+  float: left;
+  margin: 20px 0px 0px 20px;
+  width: 250px;
+  height: 30px;
+  text-align: center;
+  padding-top: 10px;
+  background-color: black;
+  border-radius: 5px;
+  font-family: -apple-system;
+  color: #818181;
+  text-decoration: none;
+}
+
+.button:hover {
+  color: #f1f1f1;
 }

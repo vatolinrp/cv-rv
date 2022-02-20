@@ -22,20 +22,50 @@
             <div id="name">Rostislav Vatolin<br>
                 Backend Software Engineer
             </div>
-            <div><img id="image" src="images/looking_away_360x640.jpeg" alt="photo of me"></div>
+            <div id="main-photo"><img id="image" src="images/looking_away_360x640.jpeg" alt="photo of me"></div>
         </div>
     </div>
     <div class="section" id="about">
         <div class="section-title">About</div>
         <div class="section-content">
-            <div id="job-title">
-                Java Software Engineer with over <div id="yoe"></div> years of production experience.
-                <script>
+            <div id="about-page-image-div"><img id="about-page-image" src="images/me_at_cafe_480x640.jpeg" alt="photo of me at cafe"></div>
+            <div class="about-info">
+                <div id="about-me-question">Who am I?</div>
+                <div id="job-title">
+                    I'm Rostislav Vatolin, a Java Software Engineer with over
+                    <div id="yoe"></div>
+                    years of production experience.
+                    <script>
                 document.getElementById("yoe").innerHTML = new Date().getFullYear() - 2015;
-                </script>
+                    </script>
+
+                </div>
+                <div id="about-me-description"><p>I'm an expert in creating and maintaining microservices. I have strong
+                    knowledge in Java and Spring Framework. I'm confident working in GCP and Azure cloud infrastructures.
+                    I'm a team player and a follower of best clean code and architecture practices.</p></div>
+                <div id="key-details">
+                    <div class="info-component">
+                        <div class="info-component-key">Name:</div>
+                        <div class="info-component-value">Rostislav Vatolin</div>
+                    </div>
+                    <div class="info-component">
+                        <div class="info-component-key">Email:</div>
+                        <div class="info-component-value">vatolinrp@icloud.com</div>
+                    </div>
+                    <div class="info-component">
+                        <div class="info-component-key">From:</div>
+                        <div class="info-component-value">Houston, Texas, USA</div>
+                    </div>
+                </div>
+                <div id="about-actions">
+                    <a href="rostislav-vatolin-resume.pdf" download class="button">
+                        Download resume
+                    </a>
+                    <a href="#contact" class="button">
+                        Lets talk!
+                    </a>
+                </div>
             </div>
-            <div><p>I'm an expert in creating and maintaining java applications. I have strong knowledge in Java
-                and Spring Framework.</p></div>
         </div>
     </div>
     <div class="section" id="skills">
