@@ -6,63 +6,42 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-<div class="sidenav">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-</div>
 <div class="main">
     <div class="section" id="home">
-        <div class="section-title">Home</div>
         <div class="section-content">
-            <div id="name">Rostislav Vatolin<br>
-                Backend Software Engineer
-            </div>
-            <div id="main-photo"><img id="image" src="images/looking_away_360x640.jpeg" alt="photo of me"></div>
-        </div>
-    </div>
-    <div class="section" id="about">
-        <div class="section-title">About</div>
-        <div class="section-content">
-            <div id="about-page-image-div"><img id="about-page-image" src="images/me_at_cafe_480x640.jpeg" alt="photo of me at cafe"></div>
-            <div class="about-info">
-                <div id="about-me-question">Who am I?</div>
-                <div id="job-title">
-                    I'm Rostislav Vatolin, a Java Software Engineer with over
-                    <div id="yoe"></div>
+            <div class="about">
+                <img class="about_image" src="images/me_at_cafe_480x640.jpeg" alt="Rostislav Vatolin">
+                <div class="about_welcome">
+                    Hello, I'm Rostislav Vatolin, a Senior Software Engineer with over
+                    <span id="years"></span>
                     years of production experience.
-                    <script>
-                document.getElementById("yoe").innerHTML = new Date().getFullYear() - 2015;
-                    </script>
-
-                </div>
-                <div id="about-me-description"><p>I'm an expert in creating and maintaining microservices. I have strong
-                    knowledge in Java and Spring Framework. I'm confident working in GCP and Azure cloud infrastructures.
-                    I'm a team player and a follower of best clean code and architecture practices.</p></div>
-                <div id="key-details">
-                    <div class="info-component">
-                        <div class="info-component-key">Name:</div>
-                        <div class="info-component-value">Rostislav Vatolin</div>
+                    <div id="about-me-description">
+                        <p>
+                            I have proven practical expertise in the development of REST and SOAP web services.
+                            I possess strong knowledge in AWS, GCP, and Azure cloud infrastructure technology stacks.
+                            I'm an experienced follower of Scrum and Kanban methodologies. I have great mentoring skills
+                            with experience in coaching a group of software engineers. Experience in business domains:
+                            Travel & Hospitality, E-commerce, Energy. I give impressive results in writing unit and integration tests.
+                        </p>
+                        <p>
+                            Main technology stack: Java, Spring Framework, JUnit, Mockito, Docker, Kubernetes, Microsoft Azure
+                        </p>
                     </div>
-                    <div class="info-component">
-                        <div class="info-component-key">Email:</div>
-                        <div class="info-component-value">vatolinrp@icloud.com</div>
+                    <div class="about-actions">
+                        <a href="resume-rv.pdf" download class="button">
+                            Download resume
+                        </a>
+                        <a href="mailto:vatolinrp@icloud.com" class="button">
+                            Lets talk!
+                        </a>
                     </div>
-                    <div class="info-component">
-                        <div class="info-component-key">From:</div>
-                        <div class="info-component-value">Houston, Texas, USA</div>
-                    </div>
-                </div>
-                <div id="about-actions">
-                    <a href="resume-rv.pdf" download class="button">
-                        Download resume
-                    </a>
-                    <a href="mailto:vatolinrp@icloud.com" class="button">
-                        Lets talk!
-                    </a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 </body>
+<script>
+     document.getElementById("years").innerHTML = new Date().getFullYear() - 2015;
+</script>
 </html>
