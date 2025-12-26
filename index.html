@@ -1,47 +1,51 @@
 <!DOCTYPE HTML>
-<html>
-<meta charset="UTF-8">
+<html lang="en">
 <head>
-    <title>Rostislav Vatolin</title>
+    <meta charset="UTF-8">
+    <title>Rostislav Vatolin | Staff Software Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="styles.css" rel="stylesheet">
 </head>
+
 <body>
-<div class="main">
-    <div class="section" id="home">
-        <div class="section-content">
-            <div class="about">
-                <img class="about_image" src="images/me_at_cafe_480x640.jpeg" alt="Rostislav Vatolin">
-                <div class="about_welcome">
-                    Hello, I'm Rostislav Vatolin, a Senior Software Engineer with over
-                    <span id="years"></span>
-                    years of production experience.
-                    <div id="about-me-description">
-                        <p>
-                            I have proven practical expertise in the development of REST and SOAP web services.
-                            I possess strong knowledge in AWS, GCP, and Azure cloud infrastructure technology stacks.
-                            I'm an experienced follower of Scrum and Kanban methodologies. I have great mentoring skills
-                            with experience in coaching a group of software engineers. Experience in business domains:
-                            Travel & Hospitality, E-commerce, Energy. I give impressive results in writing unit and integration tests.
-                        </p>
-                        <p>
-                            Main technology stack: Java, Spring Framework, JUnit, Mockito, Docker, Kubernetes, Microsoft Azure
-                        </p>
-                    </div>
-                    <div class="about-actions">
-                        <a href="Resume-Rostislav-Vatolin.pdf" download class="button">
-                            Download resume
-                        </a>
-                        <a href="mailto:vatolinrp@gmail.com" class="button">
-                            Lets talk!
-                        </a>
-                    </div>
-                </div>
+<div class="container">
+    <section class="about">
+        <img class="about_image" src="images/me_on_vacation.jpeg" alt="Rostislav Vatolin">
+
+        <div class="about_content">
+            <h1>Hi, I’m Rostislav Vatolin</h1>
+            <h2>Staff-level Software Engineer & Technical Lead</h2>
+
+            <p class="summary">
+                Staff-level Software Engineer with 10+ years of experience owning architecture and scalability
+                of cloud-native distributed systems. I specialize in platform migrations, cross-team technical
+                leadership, and building reliable, high-throughput systems in regulated environments.
+            </p>
+
+            <ul class="highlights">
+                <li>Company-wide Terraform migration (40+ production services)</li>
+                <li>Architecture owner for Abbott ↔ Omnipod integration</li>
+                <li>Distributed systems at scale on AWS, GCP, and Azure</li>
+            </ul>
+
+            <p class="stack">
+                <strong>Main stack:</strong> Java, Spring Boot, Kubernetes, Docker, AWS, Azure
+            </p>
+
+            <div class="actions">
+                <a href="Resume-Rostislav-Vatolin.pdf" download class="button primary">
+                    Download Resume
+                </a>
+                <a href="mailto:vatolinrp@gmail.com" class="button secondary">
+                    Let’s talk
+                </a>
             </div>
         </div>
-    </div>
+    </section>
 </div>
-</body>
+
 <script>
-     document.getElementById("years").innerHTML = new Date().getFullYear() - 2015;
+    document.getElementById("years")?.innerHTML = new Date().getFullYear() - 2015;
 </script>
+</body>
 </html>

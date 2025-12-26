@@ -1,38 +1,106 @@
 body {
-    font-family: -apple-system;
-    font-size: 18px;
-    color: #453b3b;
-    background-color: grey;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f7f7f7;
+    color: #2c2c2c;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
 }
 
 .about {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 30px;
+    gap: 40px;
+    align-items: flex-start;
 }
 
 .about_image {
-    width: 400px;
+    width: 260px;
+    border-radius: 12px;
+    object-fit: cover;
 }
 
-.about_welcome {
-    margin-left: 30px;
+.about_content h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.about_content h2 {
+    margin: 8px 0 20px;
+    font-weight: 500;
+    color: #555;
+}
+
+.summary {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.highlights {
+    margin: 0 0 20px 20px;
+    padding: 0;
+}
+
+.highlights li {
+    margin-bottom: 8px;
+}
+
+.stack {
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.actions {
+    display: flex;
+    gap: 16px;
 }
 
 .button {
-  float: left;
-  margin: 20px 0px 0px 20px;
-  width: 200px;
-  height: 30px;
-  text-align: center;
-  padding-top: 10px;
-  background-color: black;
-  border-radius: 5px;
-  color: #818181;
-  text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-.button:hover {
-  color: #f1f1f1;
+.button.primary {
+    background-color: #000;
+    color: #fff;
+}
+
+.button.primary:hover {
+    background-color: #222;
+}
+
+.button.secondary {
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+.button.secondary:hover {
+    background-color: #d2d2d2;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about_image {
+        width: 200px;
+    }
+
+    .highlights {
+        text-align: left;
+    }
+
+    .actions {
+        justify-content: center;
+    }
 }
